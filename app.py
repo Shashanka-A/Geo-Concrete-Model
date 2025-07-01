@@ -7,6 +7,7 @@ model = joblib.load("model.pkl")
 
 st.title("🧱 Geopolymer Concrete Strength Predictor")
 st.markdown("Enter mix design parameters to predict 28-day compressive strength (MPa).")
+st.markdown("🧠 Model Accuracy (R² Score): **0.827**")
 
 # Input fields
 fly_ash = st.number_input("Fly Ash (%)", min_value=0.0, max_value=100.0, value=50.0)
